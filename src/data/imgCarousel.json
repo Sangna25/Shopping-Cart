@@ -1,0 +1,24 @@
+{
+  "slides": [
+    {
+      "src": "/assets/img1.png",
+      "alt": "For sale"
+    },
+    {
+      "src": "/assets/img2.png",
+      "alt": "Women clothing"
+    },
+    {
+      "src": "/assets/img3.png",
+      "alt": "Shades"
+    },
+    {
+      "src": "/assets/img4.png",
+      "alt": "Men's clothing"
+    },
+    {
+      "src": "/assets/img5.png",
+      "alt": "Jewellery"
+    }
+  ]
+}
