@@ -28,6 +28,7 @@ const slides = data.slides;
 const navigate = useNavigate()
     return (
         <div className="home">
+            
             <div className="img-carousel-container">
                 <div className="img-caraousel-info">
                     <h2 className="img-carousel-title">Quiet-Luxury.</h2>
@@ -36,9 +37,9 @@ const navigate = useNavigate()
                     <button className="showNowBtn" onClick={() => navigate("/shop")}>Show Now</button>
                 </div>
             
-            <div className="img-caraousel">
+             <div className="img-caraousel">
                  <ImageCarousel data={slides}></ImageCarousel>
-            </div>
+              </div> 
             </div>
          {isLoading ? <div className="loading">
             <div className="spinner" ></div>
@@ -69,6 +70,8 @@ const navigate = useNavigate()
                     <button className="subscribeBtn">Join</button>
                     </form>
                  </div>
-        </div>
+                 </div>
+              
+        
     )
 }

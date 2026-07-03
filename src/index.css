@@ -122,10 +122,11 @@
 
     width: 100%;
   max-width: 900px;
-  height: 400px;
+  height: 700px;
  position: relative;
   margin: auto;
   overflow: hidden;
+
 }
 
 button{
@@ -208,6 +209,7 @@ button, img {
     gap:2rem;
     margin:auto auto;
     padding:4rem;
+    background-image: url('./assets/line-art-bg.jpg');
 }
 
 .loading {
