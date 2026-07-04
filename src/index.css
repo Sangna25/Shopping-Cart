@@ -505,7 +505,7 @@ footer{
     grid-template-columns:42% 58%;
 
     align-items:center;
-
+-webkit-tap-highlight-color: transparent;
     gap:4rem;
 }
 
@@ -616,7 +616,8 @@ footer{
     border-radius:0;
 
     box-shadow:none;
-
+user-select: none;
+  -webkit-user-drag: none;
     transition:opacity .45s ease;
 }
 
