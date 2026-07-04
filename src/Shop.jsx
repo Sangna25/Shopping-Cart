@@ -59,7 +59,12 @@ export function Shop (){
  
     return (
         <div className="shop">
+            <div className="shopNavBar-title">
+                    <h2>The Collection</h2>
+                    <p>Curated essentials for a timeless wardrobe.</p>
+                </div>
             <div className="shopNavBar">
+                
                 <div className="categories">
                     {categories.map((category, key) => {
                         return(

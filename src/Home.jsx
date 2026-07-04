@@ -24,8 +24,21 @@ export function Home (){
         }
 
     }
+
 const slides = data.slides;
 const navigate = useNavigate()
+useEffect(() => {
+    const handleScroll = () => {
+        document.documentElement.style.setProperty(
+            "--parallax-offset",
+            `${window.scrollY * 0.25}px`
+        );
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+}, []);
     return (
         <div className="home">
             
@@ -65,9 +78,9 @@ const navigate = useNavigate()
                         Subscribe for exclusive access to new collections, private events, and seasonal curations. 
                     </p>
                     <form className="emailInfo">
-                     <span>📧</span>
+                    
                     <input className="emailInp" type="email" placeholder="name@example.com" ></input>
-                    <button className="subscribeBtn">Join</button>
+                    <button className="subscribeBtn" type="button">Join</button>
                     </form>
                  </div>
                  </div>
